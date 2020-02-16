@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+
+   wordpress:
+     image: wordpress:latest
+     ports:
+       - "80:80"
+     environment:
+       WORDPRESS_DB_HOST: rm-gs54cm1g9w8aca907.mysql.singapore.rds.aliyuncs.com:3306
+       WORDPRESS_DB_USER: wordpress
+       WORDPRESS_DB_PASSWORD: NT6zAkon8fB4
+       WORDPRESS_DB_NAME: wordpress
